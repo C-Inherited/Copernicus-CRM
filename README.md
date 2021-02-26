@@ -36,7 +36,7 @@ In order to authenticate use the presetted test account with the credentials: "a
 |GET | /copernicus/leads/{id} | Retrieve a Lead by ID
 |GET | /copernicus/leads/all | Retrieve all Leads
 |GET | /copernicus/leads/{salesRepId} | Retrieve all Leads by a SalesRep ID
-|POST | /copernicus/lead/new | Create a new Lead
+|POST | /copernicus/leads/new | Create a new Lead
 |PUT | /copernicus/leads/update  | Modify a Lead
 |DELETE | /copernicus/delete/{id}  | Delete a Lead by ID
 |POST | /copernicus/leads/{id}/convert/{accountId}  | Convert a Lead into a new Opportunity and associates it to an existing account
