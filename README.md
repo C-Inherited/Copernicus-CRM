@@ -50,6 +50,15 @@ localhost:8080/copernicus/
 - get all
 localhost:8080/copernicus/
 
+| PETITION | ROUTE | DESCRIPTION
+| ------------- | ------------- | ------------- |
+| GET  | /contact/{id} | Shows one contact
+| GET  | /contact/ | Shows all contact
+| POST | /new/contact/ | Create a new contact
+| PUT  | /contact/{id} | Edit one existing contact
+| GET  | /opportunity-status/{id} | Shows the status of the required opportunity
+| POST  | /opportunity-status/{id} | Modify the status of a required opportunity
+
 
 
 
