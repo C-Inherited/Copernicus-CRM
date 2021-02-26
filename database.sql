@@ -70,7 +70,7 @@ CREATE TABLE sales_rep (
   sales_rep_id int NOT NULL AUTO_INCREMENT,
   name varchar(255) DEFAULT NULL,
   PRIMARY KEY (sales_rep_id)
-)
+);
 
 
 DROP SCHEMA IF EXISTS result_service;
