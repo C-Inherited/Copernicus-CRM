@@ -84,11 +84,24 @@ status VARCHAR(255),
 PRIMARY KEY(id)
 );
 
+
 INSERT INTO results (opportunity_id, status) VALUES
 (1, 'LOST'),
 (2, 'WON'),
 (3, 'LOST');
 
 
+INSERT INTO `account` (industry, employee_count, city, country) VALUES
+('OTHER', 40, 'Albacete', 'ESSSSPAÑA'),
+('MEDICAL', 2, 'Turruncun', 'ESSSSPAÑA'),
+('OTHER', 6, 'Tarancon', 'Cuenca, republica independiente');
 
+INSERT INTO contact (`name`, email, company_name,phone_number, account_id) VALUES
+('Pepa Pig', 'pepa@pig.pp', 'Pigs', '676767676', 1),
+('Ana Cardo',  'ana@car.do', 'Cards','656565656', 2),
+('Hula Hop', 'hu@la.hop', 'Huli','656565656',  3);
 
+INSERT INTO opportunity(product, quantity, contact_id, `status`, sales_rep_id, account_id) VALUES
+('BOX', 40, 1, 'OPEN', 1, 1),
+('FLATBED', 23, 2, 'CLOSED_WON', 2, 2),
+('HYBRID', 77, 3, 'CLOSED_LOST', 1, 3);
